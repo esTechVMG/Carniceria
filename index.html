@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Carniceria</title>
+        <style>
+            /**{border:1px solid grey}/*Show Box Limits*/
+            body{
+                font-family: sans-serif;
+                /*height: 1000px; /*Testing scroll*/
+            }
+            body{
+                display: flex;
+                flex-direction: column;
+                color: black;
+                background-color: white;
+                margin: 0;
+                padding: 0;
+                
+            }
+            h1,h2{
+                font-size: xx-large;
+            }
+            h1{
+                text-transform: uppercase;
+            }
+            h2::first-letter,h3::first-letter{
+                text-transform:capitalize;
+            }
+            header,#mobhead img{
+                background-color: black;
+                opacity: 0.85;
+            }
+            header{
+                position: sticky;
+                top:0;
+                display: inline-flex;
+                width: 100vw;
+                text-transform: uppercase;
+            }
+            header button,button img{
+                height: 50px;
+                width: 50px;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                
+            }
+            body>img{
+                position: fixed;
+            }
+            main{
+                background-color: white;
+                margin-top: 150px;
+                margin-bottom: 100px ;
+            }
+            #top{
+                top: 0;
+                z-index: -10;
+            }
+            section div img{
+                max-width: 100%;
+            }
+            section div{
+                padding: 1%;
+            }
+            main p{
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+            #bot{
+                bottom: 0;
+                z-index: -11;
+            }
+            #top,#bot{
+                width: 100vw;
+            }
+            #mobhead>p{
+                margin: 0 10px;
+            }
+            #mobhead{
+
+                display: inline-flex;
+                align-items: center;
+            }
+            #mobhead,#deskhead{
+                display: inline-flex;
+                color: white;
+            }
+            #deskhead{
+                width: 70vw;
+                height: 50px;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            #deskhead a p{
+                padding: auto;
+            }
+            #deskhead a{
+                flex-grow: 1;
+            }
+            #deskhead a:hover{
+                opacity: 0.60;
+                
+                
+            }
+            footer{
+                background-color: black;
+                color: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                position: static;
+                bottom: 0;
+            }
+            main>*{
+                text-align: center;
+            }
+            main p{
+                font-size: large !important;
+            }
+            #title,section{
+                margin-top: 100px;
+            }
+            section{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+            #contact{
+                background-color: grey;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                padding-bottom: 50px;
+                padding-top: 50px;
+                width: 100% !important;
+                margin: 0 !important;
+            }
+            #contact>*{
+                
+                font-size: x-large;
+                font-weight: bold;
+            }
+            #contact textarea{
+                height: 200px;
+                width:60vw;
+            }
+            #contact #emtel{
+                display: flex;
+                width: 100%;
+                flex-direction:row;
+                justify-content: space-evenly;
+            }
+            #emtel div>*{
+                margin:5%;
+            }
+            #contact>div>div{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                
+            }
+            #textarea{
+                display: flex;
+                flex-direction: column;
+            }
+            #textarea #submit{
+                align-self:flex-end;
+                color: white;
+                background-color: black;
+                text-transform: uppercase;
+                padding: 1%;
+            }
+            #social{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            #social img{
+                max-width: 100px;
+            }
+            @media(max-width:1200px){
+                #deskhead{
+                    display: none;
+                }
+                
+                #foot{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            @media(min-width: 1200px){
+                #mobhead{
+                    display: none;
+                    
+                }
+                
+                section{
+                    flex-wrap: nowrap;
+                }
+                header{
+                    justify-content: center;
+                }
+                main>*{
+                    margin-left:10%;
+                margin-right: 10%;
+                }
+            }
+            @media(max-width:800px){
+                #foot{
+                    display: none;
+                }
+            }
+            @media(min-width:800px){
+                main{
+                    margin: 10%;
+                }
+                section div{
+                    width: 40%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <img src="./img/superior.jpg" id="top">
+        <header>
+            <div id="mobhead">
+                <button>
+                    <img src="./img/menu.png">
+                </button>
+                <p>Menu</p>
+            </div>
+            <div id="deskhead">
+                <a><p>inicio</p></a>
+                <a><p>servicios</p></a>
+                <a><p>productos</p></a>
+                <a><p>tiendas</p></a>
+            </div>
+        </header>
+        <main>
+            <div>
+                <h1 id="title">Presentación</h1>
+                <p>En Carnicerías ACME ponemos a su disposición las mejores carnes, embutidos y platos preparados, entre otras delicias gourmet. Si tienen un evento y quieren deleitar a sus invitados con unos productos sanos, frescos y sabrosos, contacten con nosotros.</p>
+            </div>
+            <div>
+                <h2>Reparto a domicilio</h2>
+                <p>Realicen su pedido hoy mismo y mañana lo tendrán listo en su domicilio.</p>
+            </div>
+            <div>
+                <h2>Corte tradicional</h2>
+                <p>No tenemos bandejas preparadas. Nuestro corte es artesano y profesional.</p>
+            </div>
+            <section>
+                <div>
+                    <h3>Calidad</h3>
+                    <img src="./img/carne.jpg" alt="" title="">
+                    <p>Carne de calidad de los valles pirenáicos. Con las mejores garantías de sanidad y sabor.</p>
+                </div>
+                <div>
+                    <h3>Servicio 24h</h3>
+                    <img src="./img/entrega.jpg" alt="" title="">
+                    <p>En nuestro transporte refigerado garantizamos que cumpliremos en 24h con nuestros compromisos.</p>
+                </div>
+                <div>
+                    <h3>Restauración</h3>
+                    <img src="./img/restaurantes.jpg" alt="" title="">
+                    <p>Servimos a los mejores restaurantes de Zaragoza. Si regentas un local de restauración llámanos.</p>
+                </div>
+                <div>
+                    <h3>Charcutería</h3>
+                    <img src="./img/charcuteria.jpg" alt="" title="">
+
+                    <p>Los mejores ejemplares de jamón ibérico y embutidos tradicionales. Especialistas en charcutería.</p>
+                </div>
+            </section>
+            <div id="social">
+                <img src="./img/facebook.png" alt="" title="">
+                <img src="./img/google.png" alt="" title="">
+                <img src="./img/location.png" alt="" title="">
+            </div>
+                <form id="contact">
+                    <div id="emtel">
+                        <div>
+                            <label>Email</label>
+                            <input type="email">
+                        </div>
+                        <div>
+                            <label>Teléfono</label>
+                            <input type="tel">
+                        </div>
+                        
+                    </div>
+                    <div id="textarea">
+                        <label>Mensaje</label>
+                        <textarea></textarea>
+                        <input type="submit" value="enviar" id="submit">
+                    </div>
+                </form>
+        </main>
+        <img src="./img/inferior.jpg" id="bot">
+        <footer>
+            <p id="foot">Calle Bomba 16, 50010 Saratoga. Tfno: 666 999 666</p>
+            <p>Fax: 999 666 999. E-mail: email (at) hola.com</p>
+        </footer>
+    </body>
+</html>
